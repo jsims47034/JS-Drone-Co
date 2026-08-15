@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet the Fleet | JS Drone Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        JS <span>Drone Co.</span>
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="residential.html">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a class="active" href="fleet.html">Fleet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero fleet-hero">
+    <div class="container">
+      <div class="eyebrow">Meet the Fleet</div>
+      <h1>Tools built for the shot.</h1>
+      <p>
+        Every project needs the right platform. From high-detail property photos
+        to fast FPV movement, our equipment is selected around the story you need to tell.
+      </p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Aircraft & Equipment</div>
+        <h2>Ready for real estate, commercial, and creative work.</h2>
+        <p>
+          Update the names, descriptions, and photos below to match your own
+          actual drones and camera equipment. This page helps clients understand
+          that you bring specialized tools—not just one drone—to their project.
+        </p>
+      </div>
+
+      <div class="fleet-grid">
+        <article class="fleet-card">
+          <div class="fleet-image"></div>
+
+          <div class="fleet-info">
+            <h3>DJI Mini Series</h3>
+            <p>
+              Compact, capable aerial platform for real-estate photography,
+              neighborhood visuals, exterior coverage, and travel-friendly shoots.
+            </p>
+
+            <div class="fleet-tags">
+              <span>Real Estate</span>
+              <span>Photos</span>
+              <span>4K Video</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="fleet-card">
+          <div class="fleet-image"></div>
+
+          <div class="fleet-info">
+            <h3>DJI Neo / FPV Setup</h3>
+            <p>
+              Lightweight creative drone setup built for energetic movement,
+              fly-through concepts, social content, and unique first-person perspectives.
+            </p>
+
+            <div class="fleet-tags">
+              <span>FPV</span>
+              <span>Reels</span>
+              <span>Creative Video</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="fleet-card">
+          <div class="fleet-image"></div>
+
+          <div class="fleet-info">
+            <h3>Ground Camera Kit</h3>
+            <p>
+              Standard photo and video equipment for interiors, exteriors,
+              listing details, walkthroughs, and complete real-estate media packages.
+            </p>
+
+            <div class="fleet-tags">
+              <span>Interiors</span>
+              <span>Photography</span>
+              <span>Video</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section dark-section">
+    <div class="container service-grid">
+      <div>
+        <div class="eyebrow">Safety First</div>
+        <h2>Professional planning behind every flight.</h2>
+      </div>
+
+      <div>
+        <p>
+          Great drone media starts before the propellers turn. Each project should
+          include a review of airspace, weather, flight environment, safety risks,
+          property permissions, and the planned deliverables.
+        </p>
+
+        <ul class="service-list">
+          <li>
+            FAA Part 107 Operations
+            <span>Commercial flights are planned and performed under applicable FAA requirements.</span>
+          </li>
+
+          <li>
+            Project-Specific Flight Planning
+            <span>Shot planning, site conditions, weather checks, and airspace considerations are reviewed before flight.</span>
+          </li>
+
+          <li>
+            Flexible Creative Setup
+            <span>Each drone and camera is selected according to your project’s location, movement, detail, and final content needs.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <div class="logo-icon">✦</div>
+          JS <span>Drone Co.</span>
+        </a>
+        <p>Media equipment selected for compelling aerial and ground-level storytelling.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="residential.html">Residential Media</a></li>
+          <li><a href="commercial.html">Commercial Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Start a Project</a></li>
+          <li><a href="mailto:hello@sweezerdroneco.com">hello@sweezerdroneco.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 JS Drone Co. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

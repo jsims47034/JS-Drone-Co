@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | JS Drone Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        JS <span>Drone Co.</span>
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="residential.html">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Let’s Create Something</div>
+      <h1>Tell us about your vision.</h1>
+      <p>
+        Need real-estate media, a creative FPV video, commercial aerial content,
+        or a project quote? Send the details and JS Drone Co. will be in touch.
+      </p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container contact-layout">
+      <aside class="contact-panel">
+        <div class="eyebrow">JS Drone Co.</div>
+        <h2>Let’s get your project off the ground.</h2>
+
+        <p>
+          Include your location, project type, desired date, property or business
+          details, and any creative idea you already have. The more detail you
+          provide, the more accurate your quote can be.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <span>Email</span>
+            <a href="mailto:hello@sweezerdroneco.com">hello@sweezerdroneco.com</a>
+          </div>
+
+          <div class="contact-detail">
+            <span>Service Area</span>
+            <p>Frisco • Dallas–Fort Worth • North Texas</p>
+          </div>
+
+          <div class="contact-detail">
+            <span>Services</span>
+            <p>Real Estate • Aerial Media • FPV • Photography • 360 Tours • Mapping</p>
+          </div>
+        </div>
+      </aside>
+
+      <form class="contact-form" action="#" method="post">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+
+          <div class="form-group">
+            <label for="business">Business / Company</label>
+            <input type="text" id="business" name="business" placeholder="Your company name">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option value="">Select a service</option>
+              <option>Residential Real Estate Media</option>
+              <option>Aerial Photography</option>
+              <option>Aerial Video</option>
+              <option>FPV Creative Video</option>
+              <option>360° Virtual Tour</option>
+              <option>Commercial Media</option>
+              <option>Orthomosaic Mapping</option>
+              <option>Other / Custom Project</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred Shoot Date</label>
+            <input type="date" id="date" name="date">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Project Location</label>
+          <input type="text" id="location" name="location" placeholder="Property address or city">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Project Details</label>
+          <textarea id="message" name="message" placeholder="Tell us about your property, brand, goals, preferred deliverables, or creative vision." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Project Request</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="content-section dark-section">
+    <div class="container">
+      <div class="coming-soon">
+        <div>
+          <div class="eyebrow">Custom Requests Welcome</div>
+          <h2>Have something different in mind?</h2>
+          <p>
+            If your project does not fit neatly in a package, that is okay.
+            Reach out with your idea—whether it is a business reel, a venue
+            fly-through, land content, a property launch, or a completely
+            custom aerial concept.
+          </p>
+        </div>
+
+        <a href="mailto:hello@sweezerdroneco.com" class="btn">Email Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <div class="logo-icon">✦</div>
+          JS <span>Drone Co.</span>
+        </a>
+        <p>Let’s create elevated media for your next property, brand, or project.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="residential.html">Residential Media</a></li>
+          <li><a href="commercial.html">Commercial Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Direct Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@sweezerdroneco.com">hello@sweezerdroneco.com</a></li>
+          <li><a href="fleet.html">Meet the Fleet</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 JS Drone Co. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | JS Drone Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">✦</div>
+        JS <span>Drone Co.</span>
+      </a>
+
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="residential.html">Residential</a></li>
+        <li><a href="commercial.html">Commercial</a></li>
+        <li><a class="active" href="portfolio.html">Portfolio</a></li>
+        <li><a href="fleet.html">Fleet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Selected Projects</div>
+      <h1>Every property has a story.</h1>
+      <p>
+        A collection of aerial views, real-estate photography, commercial work,
+        creative video, and immersive 360-degree media.
+      </p>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Photography & Aerial Work</div>
+        <h2>Featured visual media.</h2>
+        <p>
+          Replace these demo images with your own work as you build your portfolio.
+          For your real images, create an <code>images</code> folder and use file
+          names such as <code>images/listing-1.jpg</code>.
+        </p>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85" alt="Luxury home aerial view">
+          <div class="portfolio-overlay">
+            <span>Aerial Photography</span>
+            <h3>Luxury Residential Listing</h3>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Modern home interior">
+          <div class="portfolio-overlay">
+            <span>Interior Photography</span>
+            <h3>Modern Living Space</h3>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85" alt="Bright house interior">
+          <div class="portfolio-overlay">
+            <span>Real Estate Media</span>
+            <h3>Natural-Light Interiors</h3>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=85" alt="Commercial building">
+          <div class="portfolio-overlay">
+            <span>Commercial</span>
+            <h3>Property Marketing</h3>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1000&q=85" alt="Road through landscape">
+          <div class="portfolio-overlay">
+            <span>Drone Video</span>
+            <h3>Cinematic Landscape</h3>
+          </div>
+        </article>
+
+        <article class="portfolio-item">
+          <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1000&q=85" alt="Drone flying in the sky">
+          <div class="portfolio-overlay">
+            <span>FPV / Aerial</span>
+            <h3>Creative Flight Content</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section dark-section">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Interactive Tours</div>
+        <h2>Explore in 360 degrees.</h2>
+        <p>
+          Add your Matterport, CloudPano, Kuula, Zillow 3D Home, or other
+          interactive-tour embed code in the three areas below.
+        </p>
+      </div>
+
+      <div class="tour-grid">
+        <article class="tour-card">
+          <div class="tour-embed">
+            <!-- Replace this box with your first 360 tour iframe -->
+            <!-- Example:
+            <iframe
+              width="100%"
+              height="230"
+              src="YOUR_360_TOUR_EMBED_LINK"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+            -->
+            <span>360 Tour Embed<br>House 01</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Featured Home Tour 01</h3>
+            <p>Replace this with the home address, neighborhood, or client-approved project name.</p>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-embed">
+            <!-- Paste your second 360 tour iframe here -->
+            <span>360 Tour Embed<br>House 02</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Featured Home Tour 02</h3>
+            <p>Add a second interactive walkthrough to demonstrate your 360-media work.</p>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-embed">
+            <!-- Paste your third 360 tour iframe here -->
+            <span>360 Tour Embed<br>House 03</span>
+          </div>
+
+          <div class="tour-info">
+            <h3>Featured Home Tour 03</h3>
+            <p>Use this area for another listing, model home, apartment, or commercial space.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="coming-soon">
+        <div>
+          <div class="eyebrow">Your Project Here</div>
+          <h2>Ready to build your listing media package?</h2>
+          <p>
+            Let’s create visuals that make your property, business, or project
+            stand out before anyone arrives in person.
+          </p>
+        </div>
+
+        <a href="contact.html" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo">
+          <div class="logo-icon">✦</div>
+          JS <span>Drone Co.</span>
+        </a>
+        <p>High-impact aerial, photo, video, and virtual-tour media from North Texas.</p>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="residential.html">Residential Media</a></li>
+          <li><a href="commercial.html">Commercial Services</a></li>
+          <li><a href="fleet.html">Meet the Fleet</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="contact.html">Request a Quote</a></li>
+          <li><a href="mailto:hello@sweezerdroneco.com">hello@sweezerdroneco.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container copyright">© 2026 JS Drone Co. All Rights Reserved.</div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("open");
+    }
+  </script>
+</body>
+</html>
