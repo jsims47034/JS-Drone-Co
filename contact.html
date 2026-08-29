@@ -54,7 +54,7 @@
         <div class="contact-details">
           <div class="contact-detail">
             <span>Email</span>
-            <a href="mailto:hello@sweezerdroneco.com">hello@sweezerdroneco.com</a>
+            <a href="mailto:jsims47034@gmail.com">jsims47034@gmail.com</a>
           </div>
 
           <div class="contact-detail">
@@ -69,7 +69,7 @@
         </div>
       </aside>
 
-      <form class="contact-form" action="#" method="post">
+      <form class="contact-form" id="contactForm">
         <div class="form-row">
           <div class="form-group">
             <label for="name">Your Name</label>
@@ -145,7 +145,9 @@
           </p>
         </div>
 
-        <a href="mailto:hello@sweezerdroneco.com" class="btn">Email Us</a>
+        <a href="mailto:jsims47034@gmail.com?subject=Drone%20Services%20Inquiry" class="btn">
+  Email Us
+</a>
       </div>
     </div>
   </section>
@@ -172,7 +174,7 @@
       <div>
         <h4>Direct Contact</h4>
         <ul class="footer-links">
-          <li><a href="mailto:hello@sweezerdroneco.com">hello@sweezerdroneco.com</a></li>
+          <li><a href="mailto:jsims47034@gmail.com">jsims47034@gmail.com</a></li>
           <li><a href="fleet.html">Meet the Fleet</a></li>
         </ul>
       </div>
@@ -181,10 +183,37 @@
     <div class="container copyright">© 2026 JS Drone Co. All Rights Reserved.</div>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      document.getElementById("navLinks").classList.toggle("open");
-    }
-  </script>
-</body>
-</html>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("open");
+  }
+
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const business = document.getElementById("business").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const location = document.getElementById("location").value;
+    const message = document.getElementById("message").value;
+
+    const subject = encodeURIComponent("New Drone Project Request from " + name);
+
+    const body = encodeURIComponent(
+      "Name: " + name + "\n" +
+      "Business: " + business + "\n" +
+      "Email: " + email + "\n" +
+      "Phone: " + phone + "\n" +
+      "Service Needed: " + service + "\n" +
+      "Preferred Shoot Date: " + date + "\n" +
+      "Project Location: " + location + "\n\n" +
+      "Project Details:\n" + message
+    );
+
+    window.location.href =
+      "mailto:jsims47034@gmail.com?subject=" + subject + "&body=" + body;
+  });
+</script>
